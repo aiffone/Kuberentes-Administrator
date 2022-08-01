@@ -8,7 +8,7 @@ fish
 kubectl create deployment hello-node --image=k8s.gcr.io/echoserver:1.4
 
 4.
-kubectl get deploymentsp
+kubectl get deployments
 
 5.
 kubectl get pods
@@ -17,7 +17,7 @@ kubectl get pods
 kubectl expose deployment hello-node --type=LoadBalancer --port=8080
 
 7.
-minikube service hello-node
+kubectl get service hello-node
 
 8.
 kubectl delete service hello-done
